@@ -198,19 +198,6 @@ const CreditCardValidator: React.FC = () => {
             )}
           </div>
 
-          <div 
-            className="mt-8 text-sm text-gray-600"
-            role="complementary"
-            aria-label="Test card numbers"
-          >
-            <h2 className="font-medium mb-2">Test card numbers:</h2>
-            <ul className="space-y-1 list-none">
-              <li>• 4532015112830366 (Valid Visa)</li>
-              <li>• 5425233430109903 (Valid Mastercard)</li>
-              <li>• 4532015112830367 (Invalid)</li>
-            </ul>
-          </div>
-
           {notify(
             status === 'valid' ? 'Card number is valid' :
             status === 'invalid' ? 'Card number is invalid' :

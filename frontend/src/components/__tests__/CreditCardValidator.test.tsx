@@ -23,12 +23,6 @@ describe('CreditCardValidator', () => {
       expect(screen.getByRole('textbox', { name: /card number/i })).toBeInTheDocument();
     });
 
-    it('shows test card numbers', () => {
-      render(<CreditCardValidator />);
-      const testNumbers = screen.getByRole('complementary', { name: /test card numbers/i });
-      expect(testNumbers).toHaveTextContent('4532015112830366');
-      expect(testNumbers).toHaveTextContent('5425233430109903');
-    });
   });
 
   describe('Card Number Formatting', () => {
